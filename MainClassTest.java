@@ -1,13 +1,13 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MainClassTest extends MainClass
-{
+public class MainClassTest extends MainClass {
 
     @Test
-    public void testGetClassNumber(){
-        int expected = 45;
-        int actual = this.getClassNumber();
-        Assert.assertTrue("Number is less than 45",actual < expected);
+    public void testGetClassString() {
+        String[] expected_words = {"Hello", "hello"};
+        String actual = this.getClassString();
+        Assert.assertTrue("There is no 'hello' or 'Hello' words", containsWords(actual, expected_words));
     }
+
 }
