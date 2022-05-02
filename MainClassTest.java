@@ -5,9 +5,9 @@ public class MainClassTest extends MainClass
 {
 
     @Test
-    public void testGetLocalNumber(){
-        int expected = 14;
-        int actual = this.getLocalNumber();
-        Assert.assertTrue("Number isn't 14",actual == expected);
+    public void testGetClassNumber(){
+        int expected = 45;
+        int actual = this.getClassNumber();
+        Assert.assertTrue("Number is less than 45",actual < expected);
     }
 }
